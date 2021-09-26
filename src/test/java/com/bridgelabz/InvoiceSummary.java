@@ -2,13 +2,13 @@ package com.bridgelabz;
 
 public class InvoiceSummary {
     private final int numberOfRides;
-    private final double totalmonthlyFare;
+    private final double totalMonthlyFare;
     private final double averageFare;
 
-    public InvoiceSummary(int numberOfRides, double totalfare){
-        this.numberOfRides= numberOfRides;
-        this.totalmonthlyFare=totalfare;
-        this.averageFare=this.totalmonthlyFare/this.numberOfRides;
+    public InvoiceSummary(int numberOfRides, double totalFare) {
+        this.numberOfRides = numberOfRides;
+        this.totalMonthlyFare = totalFare;
+        this.averageFare = this.totalMonthlyFare / this.numberOfRides;
 
     }
 
@@ -17,6 +17,6 @@ public class InvoiceSummary {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         InvoiceSummary that = (InvoiceSummary) o;
-        return numberOfRides == that.numberOfRides && Double.compare(that.totalmonthlyFare, totalmonthlyFare) == 0 && Double.compare(that.averageFare, averageFare) == 0;
+        return numberOfRides == that.numberOfRides && Double.compare(that.totalMonthlyFare, totalMonthlyFare) == 0 && Double.compare(that.averageFare, averageFare) == 0;
     }
 }
